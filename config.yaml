@@ -1,0 +1,12 @@
+api_keys:
+  virustotal: YOUR_VIRUSTOTAL_API_KEY
+  abuseipdb: YOUR_ABUSEIPDB_API_KEY
+  greynoise: YOUR_GREYNOISE_API_KEY
+  shodan: YOUR_SHODAN_API_KEY
+
+
+settings:
+  timeout: 30
+  max_retries: 3
+  output_format: "json"  # json, csv, html
+  output_directory: "outputs/"

@@ -1,0 +1,74 @@
+[
+  {
+    "ioc": "60.17.67.45",
+    "type": "ip",
+    "sources": {
+      "VirusTotal": {
+        "malicious": 3,
+        "suspicious": 0,
+        "undetected": 30,
+        "harmless": 61,
+        "reputation": 0,
+        "last_analysis_date": 1756182609
+      },
+      "AbuseIPDB": {
+        "abuse_confidence_score": 39,
+        "total_reports": 5,
+        "country_code": "CN",
+        "isp": "China Unicom Liaoning province network",
+        "domain": "chinaunicom.cn",
+        "usage_type": "Fixed Line ISP"
+      },
+      "GreyNoise": {
+        "noise": true,
+        "riot": false,
+        "classification": "malicious",
+        "name": "unknown",
+        "link": "https://viz.greynoise.io/ip/60.17.67.45",
+        "last_seen": "2025-08-26"
+      },
+      "Shodan": {
+        "error": "Shodan API request failed: 404 {\"error\": \"No information available for that IP.\"}"
+      },
+      "IPLocation": {
+        "continent": "Asia",
+        "country": "China",
+        "region": "Liaoning",
+        "city": "Sujiatun",
+        "zip": "",
+        "lat": 41.6592,
+        "lon": 123.339,
+        "timezone": "Asia/Shanghai",
+        "isp": "CHINA UNICOM China169 Backbone",
+        "org": "Unicom LN",
+        "as": "AS4837 CHINA UNICOM China169 Backbone",
+        "proxy": false,
+        "hosting": false
+      }
+    },
+    "normalized_sources": {
+      "VirusTotal": {
+        "detections": 3,
+        "scan_date": 1756182609
+      },
+      "AbuseIPDB": {
+        "abuse_score": 39,
+        "reports": 5
+      },
+      "GreyNoise": {
+        "classification": "malicious",
+        "last_seen": "2025-08-26"
+      },
+      "Shodan": {},
+      "IPLocation": {
+        "country": "China",
+        "asn": "AS4837 CHINA UNICOM China169 Backbone",
+        "isp": "CHINA UNICOM China169 Backbone"
+      }
+    },
+    "risk_assessment": {
+      "score": 38.75,
+      "level": "Medium"
+    }
+  }
+]
