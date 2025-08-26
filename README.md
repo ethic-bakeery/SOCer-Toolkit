@@ -44,25 +44,33 @@ The SOCer is a Python-based SOAR-like automation solution designed for Securit
 ```
 
 ### **Module Structure**
-
+    
 ```
 SOCer-Toolkit/
-├── socer.py                 # Entry point
-├── config.yaml            # Configuration file
-├── requirements.txt       # Dependencies
-├── modules/              # Core functionality
-│   ├── __init__.py
-│   ├── input_handler.py      # Input processing
-│   ├── enrichment_engine.py  # Orchestration
-│   ├── data_normalizer.py    # Data standardization
-│   ├── risk_scoring.py       # Risk assessment
-│   ├── report_generator.py   # Output generation
-│   ├── terminal_display.py   # Colorful terminal output
-│   ├── utils.py              # Common utilities
-│   └── *_lookup.py          # TI source modules
-├── inputs/               # Sample IOC files
-├── outputs/              # Generated reports
-└── tests/               # Unit tests
+├── socer.py # Entry point
+├── config.yaml # Configuration file
+├── requirements.txt # Dependencies
+├── modules/ # Core functionality
+│ ├── init.py
+│ ├── abuseipdb_lookup.py # AbuseIPDB threat intel lookup
+│ ├── enrichment_engine.py # Orchestration
+│ ├── ip_lookup.py # IP resolution lookup
+│ ├── risk_scoring.py # Risk assessment
+│ ├── utils.py # Common utilities
+│ ├── data_normalizer.py # Data standardization
+│ ├── greynoise_lookup.py # GreyNoise threat intel lookup
+│ ├── input_handler.py # Input processing
+│ ├── shodan_lookup.py # Shodan threat intel lookup
+│ ├── virustotal_lookup.py # VirusTotal threat intel lookup
+│ ├── domain_lookup.py # Domain intelligence lookup
+│ ├── hash_lookup.py # Hash intelligence lookup
+│ ├── iplocation_lookup.py # IP geolocation lookup
+│ ├── report_generator.py # Output generation
+│ ├── terminal_display.py # Colorful terminal output
+│ └── whois_lookup.py # WHOIS information lookup
+├── inputs/ # Sample IOC files
+├── outputs/ # Generated reports
+└── tests/ # Unit tests
 ```
 
 ## **Installation & Setup**
