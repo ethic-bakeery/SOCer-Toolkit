@@ -164,6 +164,56 @@ export ABUSEIPDB_API_KEY="your_key"
 ```
 
 ## **Usage**
+```
+python3 socer.py --help
+usage: socer.py [-h] [--ioc IOC] [--file FILE] [--clipboard] [--output {json,csv,html}] [--output-dir OUTPUT_DIR] [--no-timestamp] [--display] [--no-banner] [--config CONFIG]
+                [--timeout TIMEOUT] [--verbose] [--version]
+
+IOC Enrichment & Reputation Tool
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+Input Options:
+  --ioc IOC             Single IOC to analyze (IP, domain, or hash)
+  --file FILE           File containing IOCs to analyze (one per line)
+  --clipboard           Use IOCs from clipboard (supports multiple IOCs separated by newlines, commas, or spaces)
+
+Output Options:
+  --output {json,csv,html}
+                        Output format (default: json)
+  --output-dir OUTPUT_DIR
+                        Custom output directory (default: ./outputs/)
+  --no-timestamp        Don't include timestamp in output filename
+  --display, -d         Display colorful results in terminal
+  --no-banner           Don't display the banner
+
+Configuration Options:
+  --config CONFIG       Path to config file (default: config.yaml)
+  --timeout TIMEOUT     API timeout in seconds (overrides config)
+
+Miscellaneous Options:
+  --verbose, -v         Enable verbose output
+  --version             Show program version and exit
+
+EXAMPLES:
+  # Single IOC lookup with terminal display
+  python socer.py --ioc 8.8.8.8 --display
+
+  # Batch file processing with HTML output
+  python socer.py --file inputs/sample_iocs.txt --output html
+
+  # Clipboard input with verbose logging and terminal display
+  python socer.py --clipboard --verbose --display
+
+SUPPORTED IOC TYPES:
+  • IP Addresses: 8.8.8.8, 2001:db8::1
+  • Domains: example.com, sub.domain.org
+  • File Hashes: 
+    - MD5: 44d88612fea8a8f36de82e1278abb02f
+    - SHA1: 7c4a8d09ca3762af61e59520943dc26494f8941b
+    - SHA256: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+```
 
 ### **Basic Commands**
 
