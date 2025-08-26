@@ -45,33 +45,35 @@ The SOCer is a Python-based SOAR-like automation solution designed for Securit
 
 ### **Module Structure**
     
+
 ```
 SOCer-Toolkit/
-├── socer.py # Entry point
-├── config.yaml # Configuration file
-├── requirements.txt # Dependencies
-├── modules/ # Core functionality
-│ ├── init.py
-│ ├── abuseipdb_lookup.py # AbuseIPDB threat intel lookup
-│ ├── enrichment_engine.py # Orchestration
-│ ├── ip_lookup.py # IP resolution lookup
-│ ├── risk_scoring.py # Risk assessment
-│ ├── utils.py # Common utilities
-│ ├── data_normalizer.py # Data standardization
-│ ├── greynoise_lookup.py # GreyNoise threat intel lookup
-│ ├── input_handler.py # Input processing
-│ ├── shodan_lookup.py # Shodan threat intel lookup
-│ ├── virustotal_lookup.py # VirusTotal threat intel lookup
-│ ├── domain_lookup.py # Domain intelligence lookup
-│ ├── hash_lookup.py # Hash intelligence lookup
-│ ├── iplocation_lookup.py # IP geolocation lookup
-│ ├── report_generator.py # Output generation
-│ ├── terminal_display.py # Colorful terminal output
-│ └── whois_lookup.py # WHOIS information lookup
-├── inputs/ # Sample IOC files
-├── outputs/ # Generated reports
-└── tests/ # Unit tests
+├── socer.py                 # Entry point
+├── config.yaml              # Configuration file
+├── requirements.txt         # Dependencies
+├── modules/                 # Core functionality
+│   ├── __init__.py
+│   ├── abuseipdb_lookup.py   # AbuseIPDB integration
+│   ├── enrichment_engine.py  # Orchestration
+│   ├── ip_lookup.py          # IP reputation lookup
+│   ├── risk_scoring.py       # Risk assessment
+│   ├── utils.py              # Common utilities
+│   ├── data_normalizer.py    # Data standardization
+│   ├── greynoise_lookup.py   # GreyNoise integration
+│   ├── input_handler.py      # Input processing
+│   ├── shodan_lookup.py      # Shodan integration
+│   ├── virustotal_lookup.py  # VirusTotal integration
+│   ├── domain_lookup.py      # Domain reputation lookup
+│   ├── hash_lookup.py        # File hash reputation lookup
+│   ├── iplocation_lookup.py  # IP location lookup
+│   ├── report_generator.py   # Output generation
+│   ├── terminal_display.py   # Colorful terminal output
+│   └── whois_lookup.py       # WHOIS integration
+├── inputs/                   # Sample IOC files
+├── outputs/                  # Generated reports
+└── tests/                    # Unit tests
 ```
+
 
 ## **Installation & Setup**
 
