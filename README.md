@@ -35,7 +35,7 @@ The SOCer is a Python-based SOAR-like automation solution designed for Securit
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Input Handler │ → │ Enrichment Engine│ →  │  Risk Scoring   │
+│   Input Handler │ →  │ Enrichment Engine│ → │  Risk Scoring   │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
         ↓                      ↓                      ↓
 ┌─────────────────┐    ┌─────────────────┘    ┌─────────────────┐
@@ -46,7 +46,7 @@ The SOCer is a Python-based SOAR-like automation solution designed for Securit
 ### **Module Structure**
 
 ```
-soar-mini-automation/
+SOCer-Toolkit/
 ├── socer.py                 # Entry point
 ├── config.yaml            # Configuration file
 ├── requirements.txt       # Dependencies
@@ -78,7 +78,7 @@ soar-mini-automation/
 1. **Clone or create the project structure:**
 
 ```bash
-mkdir soar-mini-automation && cd soar-mini-automation
+mkdir SOCer-Toolkit && cd SOCer-Toolkit
 # Create the directory structure as shown above
 ```
 
@@ -109,23 +109,23 @@ To make the tool accessible from anywhere in your system:
 ### **Linux/macOS**
 
 ```bash
-# Add to your shell profile (~/.bashrc, ~/.zshrc, etc.)echo 'export PATH="$PATH:/path/to/soar-mini-automation"' >> ~/.bashrc
+# Add to your shell profile (~/.bashrc, ~/.zshrc, etc.)echo 'export PATH="$PATH:/path/to/SOCer-Toolkit"' >> ~/.bashrc
 source ~/.bashrc
 
-# Make the script executablechmod +x /path/to/soar-mini-automation/socer.py
+# Make the script executablechmod +x /path/to/SOCer-Toolkit/socer.py
 
-# Optional: Create a symlinksudo ln -s /path/to/soar-mini-automation/main.py /usr/local/bin/ioc-enricher
+# Optional: Create a symlinksudo ln -s /path/to/SOCer-Toolkit/main.py /usr/local/bin/ioc-enricher
 ```
 
 ### **Windows**
 
 ```powershell
 # Add to system PATH
-setx PATH "%PATH%;C:\path\to\soar-mini-automation"
+setx PATH "%PATH%;C:\path\to\SOCer-Toolkit"
 
 # Or create a batch file in a directory already in PATH
 @echo off
-python C:\path\to\soar-mini-automation\socer.py %*
+python C:\path\to\SOCer-Toolkit\socer.py %*
 ```
 
 ## **Configuration**
@@ -661,15 +661,6 @@ For questions, issues, or contributions:
 - Check the documentation for common solutions
 - Review existing issues for similar problems
 
-## **License**
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## **Acknowledgments**
-
-- VirusTotal, AbuseIPDB, GreyNoise, and Shodan for their threat intelligence APIs
-- The open-source community for various Python libraries used in this project
-- Security researchers and SOC analysts who provided feedback and testing
 
 ---
 
